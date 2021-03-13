@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/portfolio.min.css"> 
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a class="logo" lang="en" href="index.html">
+                <span class="logo-part-one">Web</span><span>Studio</span>
+            </a>
+            <button class="mobile-menu-button" type="button" data-menu-button>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use href="./sprite.svg#menu" class="menu-icon">
+                    </use>
+                </svg>
+            </button>
+            <div class="nav-container">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"> <a class="nav-link" href="./index.html">Студия</a></li>
+                        <li class="nav-item"> <a class="nav-link current" href="./portfolio.html">Портфолио</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="contacts">
+                    <li class="contact-item">
+                        <a class="contact-link" href="mailto:info@devstudio.com">
+                            <svg class="contact-link-icon envelope">
+                                <use href="./sprite.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="contact-item">
+                        <a class="contact-link" href="tel:+380961111111">
+                            <svg class="contact-link-icon smartphone">
+                                <use href="./sprite.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="menu-container" data-menu>
+    
+            <button class="menu-close-button" type="button" data-menu-close>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use href="./sprite.svg#menu-close" class="menu-close-icon">
+                    </use>
+                </svg>
+            </button>
+    
+            <nav class="nav-mobile">
+                <ul class="nav-list-mobile">
+                    <li class="nav-item-mobile"> <a class="nav-link-mobile" href="./index.html">Студия</a>
+                    </li>
+                    <li class="nav-item-mobile"> <a class="nav-link-mobile current-mobile" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav-item-mobile"> <a class="nav-link-mobile" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul class="contacts-mobile">
+                    <li class="contact-item-mobile">
+                        <a class="contact-link-mobile-phone" href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="contact-item-mobile">
+                        <a class="contact-link-mobile-mail" href="mailto:info@devstudio.com">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+                
+                <ul class="mobile-social-list">
+                    <li class="mobile-social-item">
+                        <a href="" class="mobile-social-link">Instagram</a>
+                    </li>
+                    <li class="mobile-social-item">
+                        <a href="" class="mobile-social-link">Twitter</a>
+                    </li>
+                    <li class="mobile-social-item">
+                        <a href="" class="mobile-social-link">Facebook</a>
+                    </li>
+                    <li class="mobile-social-item">
+                        <a href="" class="mobile-social-link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="portfolio-section">
+           <div class="container">
+                <h1 class="visually-hidden">Портфолио</h1>
+                <ul class="portfolio-filters">
+                    <li class="filter-item">
+                        <button class="filter" type="button">Все</button>
+                    </li>
+                    <li class="filter-item">
+                        <button class="filter" type="button">Веб-сайты</button>
+                
+                    </li>
+                    <li class="filter-item">
+                        <button class="filter" type="button">Приложения</button>
+                
+                    </li>
+                    <li class="filter-item">
+                        <button class="filter" type="button">Дизайн</button>
+                
+                    </li>
+                    <li class="filter-item">
+                        <button class="filter" type="button">Маркетинг</button>
+                
+                    </li>
+                </ul>
+
+                <ul class="portfolio-options">
+
+                    <li class="option-item">
+                        <a class="portfolio-card" href="">
+                            <div class="overlay">
+                                <picture class="portfolio-pic">
+                                    <source srcset="
+                                    ./images/desktop/portfolio1-desktop-1x.webp 1x, 
+                                    ./images/desktop/portfolio1-desktop-2x.webp 2x" 
+                                    media="(min-width: 1200px)"
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/desktop/portfolio1-desktop-1x.jpg 1x, 
+                                    ./images/desktop/portfolio1-desktop-2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                                
+                                    <source srcset="
+                                    ./images/tablet/portfolio1-tablet-1x.webp 1x, 
+                                    ./images/tablet/portfolio1-tablet-2x.webp 2x" 
+                                    media="(min-width: 768px)"
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/tablet/portfolio1-tablet-1x.jpg 1x, 
+                                    ./images/tablet/portfolio1-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                                
+                                    <source srcset="
+                                    ./images/mobile/portfolio1-mobile-1x.webp 1x, 
+                                    ./images/mobile/portfolio1-mobile-2x.webp 2x" 
+                                    media="(max-width: 480px) "
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/mobile/portfolio1-mobile-1x.jpg 1x, 
+                                    ./images/mobile/portfolio1-mobile-2x.jpg 2x" 
+                                    media="(max-width: 480px)">
+                                
+                                    <img class="portfolio-pic" src="./images/mobile/portfolio1-mobile-1x.jpg" alt="ноутбук">
+                                </picture>
+                                <p class="card-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
+                                    для цифрового
+                                    шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="frame">
+                                <h2 class="card-name">Технокряк</h2>
+                                <p class="card-type">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="option-item">
+                        <a class="portfolio-card" href="">
+                            <div class="overlay">
+                                <picture class="portfolio-pic">
+                                    <source srcset="
+                                    ./images/desktop/portfolio2-desktop-1x.webp 1x, 
+                                    ./images/desktop/portfolio2-desktop-2x.webp 2x" 
+                                    media="(min-width: 1200px)"
+                                    type="image/webp">
+                                    
+                                    <source srcset="
+                                    ./images/desktop/portfolio2-desktop-1x.jpg 1x, 
+                                    ./images/desktop/portfolio2-desktop-2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                                    
+                                    <source srcset="
+                                    ./images/tablet/portfolio2-tablet-1x.webp 1x, 
+                                    ./images/tablet/portfolio2-tablet-2x.webp 2x" 
+                                    media="(min-width: 768px)"
+                                    type="image/webp">
+                                    
+                                    <source srcset="
+                                    ./images/tablet/portfolio2-tablet-1x.jpg 1x, 
+                                    ./images/tablet/portfolio2-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                                    
+                                    <source srcset="
+                                    ./images/mobile/portfolio2-mobile-1x.webp 1x, 
+                                    ./images/mobile/portfolio2-mobile-2x.webp 2x" 
+                                    media="(max-width: 480px) "
+                                    type="image/webp">
+                                    
+                                    <source srcset="
+                                    ./images/mobile/portfolio2-mobile-1x.jpg 1x, 
+                                    ./images/mobile/portfolio2-mobile-2x.jpg 2x" 
+                                    media="(max-width: 480px)">
+                                    
+                                    <img class="portfolio-pic"
+                                    src="./images/mobile/portfolio2-mobile-1x.jpg" alt="баскетбол">
+                                </picture>
+                                <p class="card-text"></p>
+                            </div>
+                            <div class="frame">
+                                <h2 class="card-name">Постер New Orlean vs Golden Star</h2>
+                                <p class="card-type">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="option-item">
+                        <a class="portfolio-card" href="">
+                            <div class="overlay">
+                                <picture class="portfolio-pic">
+                                    <source srcset="
+                                    ./images/desktop/portfolio3-desktop-1x.webp 1x, 
+                                    ./images/desktop/portfolio3-desktop-2x.webp 2x" 
+                                    media="(min-width: 1200px)"
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/desktop/portfolio3-desktop-1x.jpg 1x, 
+                                    ./images/desktop/portfolio3-desktop-2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                                
+                                    <source srcset="
+                                    ./images/tablet/portfolio3-tablet-1x.webp 1x, 
+                                    ./images/tablet/portfolio3-tablet-2x.webp 2x" 
+                                    media="(min-width: 768px)"
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/tablet/portfolio3-tablet-1x.jpg 1x, 
+                                    ./images/tablet/portfolio3-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                                
+                                    <source srcset="
+                                    ./images/mobile/portfolio3-mobile-1x.webp 1x, 
+                                    ./images/mobile/portfolio3-mobile-2x.webp 2x" 
+                                    media="(max-width: 480px) "
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/mobile/portfolio3-mobile-1x.jpg 1x, 
+                                    ./images/mobile/portfolio3-mobile-2x.jpg 2x" 
+                                    media="(max-width: 480px)">
+                                
+                                    <img class="portfolio-pic" src="./images/mobile/portfolio3-mobile-1x.jpg" alt="емблема">
+                                </picture>
+                                <p class="card-text"></p>
+                            </div>
+                            <div class="frame">
+                                <h2 class="card-name">Ресторан Seafood</h2>
+                                <p class="card-type">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li class="option-item">
+                        <a class="portfolio-card" href="">
+                            <div class="overlay">
+                                <picture class="portfolio-pic">
+                                    <source srcset="
+                                    ./images/desktop/portfolio4-desktop-1x.webp 1x, 
+                                    ./images/desktop/portfolio4-desktop-2x.webp 2x" 
+                                    media="(min-width: 1200px)"
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/desktop/portfolio4-desktop-1x.jpg 1x, 
+                                    ./images/desktop/portfolio4-desktop-2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                                
+                                    <source srcset="
+                                    ./images/tablet/portfolio4-tablet-1x.webp 1x, 
+                                    ./images/tablet/portfolio4-tablet-2x.webp 2x" 
+                                    media="(min-width: 768px)"
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/tablet/portfolio4-tablet-1x.jpg 1x, 
+                                    ./images/tablet/portfolio4-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                                
+                                    <source srcset="
+                                    ./images/mobile/portfolio4-mobile-1x.webp 1x, 
+                                    ./images/mobile/portfolio4-mobile-2x.webp 2x" 
+                                    media="(max-width: 480px) "
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/mobile/portfolio4-mobile-1x.jpg 1x, 
+                                    ./images/mobile/portfolio4-mobile-2x.jpg 2x" 
+                                    media="(max-width: 480px)">
+                                
+                                    <img class="portfolio-pic" src="./images/mobile/portfolio4-mobile-1x.jpg" alt="наушники">
+                                </picture>
+                                <p class="card-text"></p>
+                            </div>
+                            <div class="frame">
+                                <h2 class="card-name">Проект Prime</h2>
+                                <p class="card-type">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li class="option-item">
+                        <a class="portfolio-card" href="">
+                            <div class="overlay">
+                                <picture class="portfolio-pic">
+                                    <source srcset="
+                                    ./images/desktop/portfolio5-desktop-1x.webp 1x, 
+                                    ./images/desktop/portfolio5-desktop-2x.webp 2x" 
+                                    media="(min-width: 1200px)"
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/desktop/portfolio5-desktop-1x.jpg 1x, 
+                                    ./images/desktop/portfolio5-desktop-2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                                
+                                    <source srcset="
+                                    ./images/tablet/portfolio5-tablet-1x.webp 1x, 
+                                    ./images/tablet/portfolio5-tablet-2x.webp 2x" 
+                                    media="(min-width: 768px)"
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/tablet/portfolio5-tablet-1x.jpg 1x, 
+                                    ./images/tablet/portfolio5-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                                
+                                    <source srcset="
+                                    ./images/mobile/portfolio5-mobile-1x.webp 1x, 
+                                    ./images/mobile/portfolio5-mobile-2x.webp 2x" 
+                                    media="(max-width: 480px) "
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/mobile/portfolio5-mobile-1x.jpg 1x, 
+                                    ./images/mobile/portfolio5-mobile-2x.jpg 2x" 
+                                    media="(max-width: 480px)">
+                                
+                                    <img class="portfolio-pic" src="./images/mobile/portfolio5-mobile-1x.jpg" alt="коробки">
+                                </picture>
+                                <p class="card-text"></p>
+                            </div>
+                            <div class="frame">
+                                <h2 class="card-name">Проект Boxes</h2>
+                                <p class="card-type">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li class="option-item">
+                        <a class="portfolio-card" href="">
+                            <div class="overlay">
+                                <picture class="portfolio-pic">
+                                    <source srcset="
+                                    ./images/desktop/portfolio6-desktop-1x.webp 1x, 
+                                    ./images/desktop/portfolio6-desktop-2x.webp 2x" 
+                                    media="(min-width: 1200px)"
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/desktop/portfolio6-desktop-1x.jpg 1x, 
+                                    ./images/desktop/portfolio6-desktop-2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                            
+                                    <source srcset="
+                                    ./images/tablet/portfolio6-tablet-1x.webp 1x, 
+                                    ./images/tablet/portfolio6-tablet-2x.webp 2x" 
+                                    media="(min-width: 768px)"
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/tablet/portfolio6-tablet-1x.jpg 1x, 
+                                    ./images/tablet/portfolio6-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                            
+                                    <source srcset="
+                                    ./images/mobile/portfolio6-mobile-1x.webp 1x, 
+                                    ./images/mobile/portfolio6-mobile-2x.webp 2x" 
+                                    media="(max-width: 480px) "
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/mobile/portfolio6-mobile-1x.jpg 1x, 
+                                    ./images/mobile/portfolio6-mobile-2x.jpg 2x" 
+                                    media="(max-width: 480px)">
+                            
+                                    <img class="portfolio-pic" src="./images/mobile/portfolio6-mobile-1x.jpg" alt="монитор">
+                                </picture>
+                                <p class="card-text"></p>
+                            </div>
+                            <div class="frame">
+                                <h2 class="card-name">Inspiration has no Borders</h2>
+                                <p class="card-type">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li class="option-item">
+                        <a class="portfolio-card" href="">
+                            <div class="overlay">
+                                <picture class="portfolio-pic">
+                                    <source srcset="
+                                    ./images/desktop/portfolio7-desktop-1x.webp 1x, 
+                                    ./images/desktop/portfolio7-desktop-2x.webp 2x" 
+                                    media="(min-width: 1200px)"
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/desktop/portfolio7-desktop-1x.jpg 1x, 
+                                    ./images/desktop/portfolio7-desktop-2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                            
+                                    <source srcset="
+                                    ./images/tablet/portfolio7-tablet-1x.webp 1x, 
+                                    ./images/tablet/portfolio7-tablet-2x.webp 2x" 
+                                    media="(min-width: 768px)"
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/tablet/portfolio7-tablet-1x.jpg 1x, 
+                                    ./images/tablet/portfolio7-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                            
+                                    <source srcset="
+                                    ./images/mobile/portfolio7-mobile-1x.webp 1x, 
+                                    ./images/mobile/portfolio7-mobile-2x.webp 2x" 
+                                    media="(max-width: 480px) "
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/mobile/portfolio7-mobile-1x.jpg 1x, 
+                                    ./images/mobile/portfolio7-mobile-2x.jpg 2x" 
+                                    media="(max-width: 480px)">
+                            
+                                    <img class="portfolio-pic" src="./images/mobile/portfolio7-mobile-1x.jpg" alt="книга">
+                                </picture>
+                                <p class="card-text"></p>
+                            </div>
+                            <div class="frame">
+                                <h2 class="card-name">Издание Limited Edition</h2>
+                                <p class="card-type">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li class="option-item">
+                        <a class="portfolio-card" href="">
+                            <div class="overlay">
+                                <picture class="portfolio-pic">
+                                    <source srcset="
+                                    ./images/desktop/portfolio8-desktop-1x.webp 1x, 
+                                    ./images/desktop/portfolio8-desktop-2x.webp 2x" 
+                                    media="(min-width: 1200px)"
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/desktop/portfolio8-desktop-1x.jpg 1x, 
+                                    ./images/desktop/portfolio8-desktop-2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                            
+                                    <source srcset="
+                                    ./images/tablet/portfolio8-tablet-1x.webp 1x, 
+                                    ./images/tablet/portfolio8-tablet-2x.webp 2x" 
+                                    media="(min-width: 768px)"
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/tablet/portfolio8-tablet-1x.jpg 1x, 
+                                    ./images/tablet/portfolio8-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                            
+                                    <source srcset="
+                                    ./images/mobile/portfolio8-mobile-1x.webp 1x, 
+                                    ./images/mobile/portfolio8-mobile-2x.webp 2x" 
+                                    media="(max-width: 480px) "
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/mobile/portfolio8-mobile-1x.jpg 1x, 
+                                    ./images/mobile/portfolio8-mobile-2x.jpg 2x" 
+                                    media="(max-width: 480px)">
+                            
+                                    <img class="portfolio-pic" src="./images/mobile/portfolio8-mobile-1x.jpg" alt="бирка">
+                                </picture>
+                                <p class="card-text"></p>
+                            </div>
+                            <div class="frame">
+                                <h2 class="card-name">Проект LAB</h2>
+                                <p class="card-type">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li class="option-item">
+                        <a class="portfolio-card" href="">
+                            <div class="overlay">
+                                <picture class="portfolio-pic">
+                                    <source srcset="
+                                    ./images/desktop/portfolio9-desktop-1x.webp 1x, 
+                                    ./images/desktop/portfolio9-desktop-2x.webp 2x" 
+                                    media="(min-width: 1200px)"
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/desktop/portfolio9-desktop-1x.jpg 1x, 
+                                    ./images/desktop/portfolio9-desktop-2x.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                                
+                                    <source srcset="
+                                    ./images/tablet/portfolio9-tablet-1x.webp 1x, 
+                                    ./images/tablet/portfolio9-tablet-2x.webp 2x" 
+                                    media="(min-width: 768px)"
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/tablet/portfolio9-tablet-1x.jpg 1x, 
+                                    ./images/tablet/portfolio9-tablet-2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                                
+                                    <source srcset="
+                                    ./images/mobile/portfolio9-mobile-1x.webp 1x, 
+                                    ./images/mobile/portfolio9-mobile-2x.webp 2x" 
+                                    media="(max-width: 480px) "
+                                    type="image/webp">
+                                
+                                    <source srcset="
+                                    ./images/mobile/portfolio9-mobile-1x.jpg 1x, 
+                                    ./images/mobile/portfolio9-mobile-2x.jpg 2x" 
+                                    media="(max-width: 480px)">
+                                
+                                    <img class="portfolio-pic" src="./images/mobile/portfolio9-mobile-1x.jpg" alt="ноутбук">
+                                </picture>
+                                <p class="card-text"></p>
+                            </div>
+                            <div class="frame">
+                                <h2 class="card-name">Growing Business</h2>
+                                <p class="card-type">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+           </div>
+        </section>
+    </main>
+    
+    <footer class="footer-section">
+        <div class="container">
+    
+            <div class="footer-nav-container">
+                <div class="footer-navigation">
+                    <a class="footer-logo" lang="en" href="index.html"><span class="logo-part-one">Web</span><span
+                            class="logo-part-two">Studio</span></a>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a class="address" href="https://goo.gl/maps/VJHpVsU5LnENz9G17">г. Киев, пр-т Леси Украинки, 26</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-phone" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social-container">
+                    <p class="footer-text">присоединяйтесь</p>
+                    <ul class="footer-social-list">
+                        <li class="footer-social-links-item">
+                            <a class="footer-social-link" href="">
+                                <svg class="footer-social-icon">
+                                    <use href="./sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-links-item">
+                            <a class="footer-social-link" href="">
+                                <svg class="footer-social-icon">
+                                    <use href="./sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-links-item">
+                            <a class="footer-social-link" href="">
+                                <svg class="footer-social-icon">
+                                    <use href="./sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-links-item">
+                            <a class="footer-social-link" href="">
+                                <svg class="footer-social-icon">
+                                    <use href="./sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="email-container">
+                <p class="footer-text">Подпишитесь на рассылку</p>
+                <form class="footer-form">
+                    <input type="email" name="email" id="email" class="email-field" placeholder="E-mail">
+                    <button type="submit" class="subscribe-button">Подписаться
+                        <svg class="subscribe-icon">
+                            <use href="./sprite.svg#telegram"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+    
+        </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+</body>
+
+</html>

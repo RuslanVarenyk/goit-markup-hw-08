@@ -1,0 +1,31 @@
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 85px;
+  color: #000000;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.192;
+    margin-right: 93px;
+  }
+}
+
+.logo-part-one {
+  color: $accent-color;
+}
+
+.footer-logo {
+  @extend .logo;
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+
+.logo-part-two {
+  color: $primary-white-color;
+}

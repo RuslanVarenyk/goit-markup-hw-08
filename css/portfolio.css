@@ -36,7 +36,8 @@ input[type=radio].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -415,6 +416,12 @@ input[type=radio].visually-hidden {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .portfolio-filters {
   display: flex;
@@ -474,6 +481,16 @@ input[type=radio].visually-hidden {
   width: 100%;
   max-width: 450px;
 }
+@media screen and (min-width: 768px) {
+  .option-item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .option-item {
+    width: 370px;
+  }
+}
 
 .portfolio-card {
   text-decoration: none;
@@ -488,16 +505,26 @@ input[type=radio].visually-hidden {
 
 .overlay {
   position: relative;
-  max-width: 450px;
-  height: 294px;
+  max-width: 100%;
+  height: auto;
   overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .overlay {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    width: 370px;
+  }
 }
 
 .card-text {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 63px 24px;
+  padding: 62px 24px;
   width: 100%;
   height: 100%;
   font-weight: normal;
@@ -511,6 +538,16 @@ input[type=radio].visually-hidden {
 }
 .portfolio-card:hover .card-text, .portfolio-card:focus .card-text {
   transform: translateY(0);
+}
+@media screen and (min-width: 768px) {
+  .card-text {
+    padding: 49px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-text {
+    padding: 62px 24px;
+  }
 }
 
 .frame {
@@ -712,6 +749,20 @@ input[type=radio].visually-hidden {
   background-color: #2f303a;
   padding-left: 16px;
   margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.email-field::-moz-placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.email-field:-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .email-field::placeholder {

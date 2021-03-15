@@ -159,15 +159,48 @@
                 <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="works-list">
                     <li class="works-item">
-                        <img src="./images/box1.jpg" alt="набор текста" width="370">
+                        <picture>
+                            <source srcset="
+                            ./images/desktop/works-1-desktop-1x.webp 1x,
+                            ./images/desktop/works-1-desktop-2x.webp 2x" 
+                            media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="
+                            ./images/desktop/works-1-desktop-1x.jpg 1x,
+                            ./images/desktop/works-1-desktop-2x.jpg 2x" 
+                            media="(min-width: 1200px)">
+                    
+                            <img class="team-pic" src="./images/desktop/works-1-desktop-1x.jpg" alt="Набор текста">
+                        </picture>
                         <p class="works-text">Десктопные приложения</p>
                     </li>
                     <li class="works-item">
-                        <img src="./images/box2.jpg" alt="программирование" width="370">
+                        <picture>
+                            <source srcset="
+                            ./images/desktop/works-2-desktop-1x.webp 1x,
+                            ./images/desktop/works-2-desktop-2x.webp 2x"
+                             media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="
+                            ./images/desktop/works-2-desktop-1x.jpg 1x,
+                            ./images/desktop/works-2-desktop-2x.jpg 2x"
+                             media="(min-width: 1200px)">
+                        
+                            <img class="team-pic" src="./images/desktop/works-2-desktop-1x.jpg" alt="Программирование">
+                        </picture>
                         <p class="works-text">Мобильные приложения</p>
                     </li>
                     <li class="works-item">
-                        <img src="./images/box3.jpg" alt="палитра цветов" width="370">
+                        <picture>
+                            <source srcset="
+                            ./images/desktop/works-3-desktop-1x.webp 1x,
+                            ./images/desktop/works-3-desktop-2x.webp 2x"
+                             media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="
+                            ./images/desktop/works-3-desktop-1x.jpg 1x,
+                            ./images/desktop/works-3-desktop-2x.jpg 2x"
+                             media="(min-width: 1200px)">
+                        
+                            <img class="team-pic" src="./images/desktop/works-3-desktop-1x.jpg" alt="Палитра цветов">
+                        </picture>
                         <p class="works-text">Дизайнерские решения</p>
                     </li>
                 </ul>

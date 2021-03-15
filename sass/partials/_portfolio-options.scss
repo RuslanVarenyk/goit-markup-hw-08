@@ -7,6 +7,14 @@
   margin: 15px;
   width: 100%;
   max-width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .portfolio-card {
@@ -25,11 +33,16 @@
 
 .overlay {
   position: relative;
-  max-width: 450px;
-  height: 294px;
+  max-width: 100%;
+  height: auto;
   overflow: hidden;
 
-  //   width: 370px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .card-text {
@@ -37,7 +50,7 @@
   bottom: 0;
   left: 0;
 
-  padding: 63px 24px;
+  padding: 62px 24px;
 
   width: 100%;
   height: 100%;
@@ -56,6 +69,14 @@
   .portfolio-card:hover &,
   .portfolio-card:focus & {
     transform: translateY(0);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 62px 24px;
   }
 }
 
